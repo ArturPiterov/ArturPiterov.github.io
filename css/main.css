@@ -1,0 +1,282 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.animated {
+    opacity: 0;
+}
+
+.header {
+    background: linear-gradient(24deg, #23d4d3, #3130c7);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    -o-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+
+    padding-top: 20px;
+    padding-bottom: 105px;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:35% 0%}
+    50%{background-position:66% 100%}
+    100%{background-position:35% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:35% 0%}
+    50%{background-position:66% 100%}
+    100%{background-position:35% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:35% 0%}
+    50%{background-position:66% 100%}
+    100%{background-position:35% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:35% 0%}
+    50%{background-position:66% 100%}
+    100%{background-position:35% 0%}
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 62px;
+}
+
+.title {
+    font-size: 37px;
+}
+
+.title2 {
+    font-size: 59px;
+}
+
+.offer {
+    margin-top: 160px;
+}
+
+.title, .title2 {
+    width: 485px;
+}
+
+.intro {
+    width: 398px;
+    margin-top: 30px;
+}
+
+.btn {
+    background: #ffd429;
+    width: 220px;
+    padding: 20px 25px;
+    font-family: "Montserrat Black", sans-serif;
+    font-size: 15px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #caa820;
+}
+
+.biglogo {
+    margin-top: 56px;
+}
+
+.learn {
+
+    padding-top: 20px;
+    padding-bottom: 40px;
+    transition: all 1s ease;
+}
+
+.whereskill {
+    text-align: center;
+    color: black;
+    font-family: 'Myriad Pro', sans-serif;
+    padding-top: 100px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.skill {
+    color: black;
+    width: 350px;
+    background: url("../img/time.png")
+    no-repeat top;
+    padding-top: 100px;
+}
+
+.skill-zag {
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skill-text {
+    margin-top: 7px;
+}
+
+.skill-travel {
+    background: url("../img/beach.png")
+    no-repeat top;
+}
+
+.skill-cenn {
+    background: url("../img/racket.png")
+    no-repeat top;
+    transition: margin-left 1s ease-in;
+}
+
+.mail {
+    background: #ecf3f8;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.formm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formz {
+    text-align: center;
+    font-family: 'Myriad Pro', sans-serif;
+    color: black;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.form {
+    text-align: center;
+}
+
+.form .inputs {
+    width: 342px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    margin-top: 14px;
+}
+
+.btnform {
+    margin: auto;
+}
+
+
+footer {
+    background: #164d7a;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/* Responsive */
+
+/* 992 - 1280 */
+@media screen and (max-width: 1200px){
+    .container {
+        width: 960px;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .offer {
+        width: auto;
+    }
+
+    .intro {
+        width: auto;
+    }
+
+    .biglogo {
+        width: 100%;
+    }
+}
+
+/* 768 - 992 */
+@media screen and (max-width: 992px){
+    .container {
+        width: 720px;
+    }
+
+    .skill {
+        padding-left: 15px;
+        width: auto;
+    }
+
+}
+
+/* 576 - 768 */
+@media screen and (max-width: 768px){
+    .container {
+        width: 540px;
+    }
+
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: auto;
+        text-align: center;
+    }
+}
+
+/* 320 - 576 */
+@media screen and (max-width: 576px){
+    .container {
+        width: 90%;
+    }
+    
+    .offer h3, h2 {
+        width: auto;
+    }
+
+    .form .inputs {
+        width: 290px;
+    }
+}
